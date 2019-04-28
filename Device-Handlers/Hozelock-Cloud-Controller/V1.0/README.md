@@ -4,7 +4,7 @@ Version 1.0 - 28th April 2019.
 
 Author: Elliott Veares.
 
-## To use:
+## To install:
 
 1) Install this device handler via the SmartThings Groovy IDE.
 
@@ -20,5 +20,6 @@ Author: Elliott Veares.
 
 
 SmartThings Groovy ID: https://graph.api.smartthings.com/
+Smartthings Forum Post: 
 
 Regards: Elliott.
