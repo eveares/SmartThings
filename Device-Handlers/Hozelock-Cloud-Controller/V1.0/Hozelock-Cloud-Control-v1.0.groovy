@@ -291,16 +291,9 @@ updateStatusNow()
 }
 
 //Live updating of status tiles.
-def updateStatus() {
-unschedule()
-runEvery1Minute(batterystatus)
-runEvery1Minute(signalstatus)
-runEvery1Minute(childlockstatus)
-runEvery1Minute(iswateringstatus)
-runEvery1Minute(ispanelremovedstatus)
-runEvery1Minute(isadjustedstatus)
-runEvery1Minute(ispausedstatus)
-runEvery1Minute(isUresponsive)
+def updateStatus() 
+{
+runEvery1Minute(updateStatusNow)
 }
  
 //On demand updating of status tiles. 
