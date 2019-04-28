@@ -13,10 +13,10 @@
  *
  */
 metadata {
-	definition (name: "Hozelock Cloud Control v1.0", namespace: "eveares", author: "Elliott Veares") 
+    definition (name: "Hozelock Cloud Control v1.0", namespace: "eveares", author: "Elliott Veares") 
     {
-  	capability "Polling"
-	capability "Actuator"
+    capability "Polling"
+    capability "Actuator"
     capability "Switch"
     capability "Button"
     capability "Momentary"
@@ -846,5 +846,4 @@ try {
 }
 
 }
-
 //End of Device Handler.
