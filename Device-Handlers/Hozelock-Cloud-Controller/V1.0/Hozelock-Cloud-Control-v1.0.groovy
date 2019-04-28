@@ -46,9 +46,7 @@ command "resetall"
 
 // tile definitions
 	tiles {
-	        
-			standardTile("switch", "device.switch", width: 2, height: 2, canChangeIcon: true) {
-			
+	        standardTile("switch", "device.switch", width: 2, height: 2, canChangeIcon: true) {	
 		  }
 			
             standardTile("adjustdurationdecrease", "device.adjustdurationdecrease", width: 1, height: 1,  decoration: "flat", canChangeIcon: true) {
@@ -63,9 +61,7 @@ command "resetall"
             standardTile("adjustdurationincrease", "device.adjustdurationincrease", width: 1, height: 1,  decoration: "flat", canChangeIcon: true) {
 			state "Adjustdurationincrease", label: "Duration", action: "adjustdurationincrease", icon: "st.custom.buttons.add-icon"
 		  }
-          
-        
-        
+
             standardTile("adjustpercentdecrease", "device.adjustpercentdecrease", width: 1, height: 1,  decoration: "flat", canChangeIcon: true) {
 			state "Adjustpercentdecrease", label: "Amount", action: "adjustpercentdecrease", icon: "st.custom.buttons.subtract-icon"
 		  }
@@ -73,23 +69,19 @@ command "resetall"
             valueTile("adjustpercenttile", "device.adjustpercenttile", width: 1, height: 1) {
 			state "val", label:'${currentValue}', defaultState: true
 		  }
-          
-          
+ 
             standardTile("adjustpercentincrease", "device.adjustpercentincrease", width: 1, height: 1,  decoration: "flat", canChangeIcon: true) {
 			state "Adjustpercentincrease", label: "Amount", action: "adjustpercentincrease", icon: "st.custom.buttons.add-icon"
 		  }
-          
-       
+  
             standardTile("adjust", "device.adjust", width: 1, height: 1,  decoration: "flat", canChangeIcon: true) {
 			state "Adjust", label: "Adjust", action: "adjust", icon: "st.secondary.tools"
 		  }
-          
-          
+   
             standardTile("unadjust", "device.unadjust", width: 1, height: 1,  decoration: "flat", canChangeIcon: true) {
 			state "Unadjust", label: "Unadjust", action: "unadjust", icon: "st.secondary.refresh-icon"
 		  }
-          
-          
+   
             standardTile("pausedurationdecrease", "device.pausedurationdecrease", width: 1, height: 1,  decoration: "flat", canChangeIcon: true) {
 			state "pausedurationdecrease", label: "Duration", action: "pausedurationdecrease", icon: "st.custom.buttons.subtract-icon"
 		  }
@@ -97,8 +89,7 @@ command "resetall"
             valueTile("pausedurationtile", "device.pausedurationtile", width: 1, height: 1) {
 			state "val", label:'${currentValue}', defaultState: true
 		  }
-          
-          
+ 
             standardTile("pausedurationincrease", "device.pausedurationincrease", width: 1, height: 1,  decoration: "flat", canChangeIcon: true) {
 			state "Pausedurationincrease", label: "Duration", action: "pausedurationincrease", icon: "st.custom.buttons.add-icon"
 		  }
@@ -118,8 +109,7 @@ command "resetall"
             valueTile("waterdurationtile", "device.waterdurationtile", width: 1, height: 1) {
 			state "val", label:'${currentValue}', defaultState: true
 		  }
-          
-          
+ 
             standardTile("waterdurationincrease", "device.waterdurationincrease", width: 1, height: 1,  decoration: "flat", canChangeIcon: true) {
 			state "waterdurationincrease", label: "Duration", action: "waterdurationincrease", icon: "st.custom.buttons.add-icon"
 		  }
@@ -190,11 +180,9 @@ command "resetall"
            valueTile("childlocktext", "device.childlocktext", width: 1, height: 1) {
 			state "val", label:"Child Lock", defaultState: true
           
-		  }
-          
+		  } 
            	valueTile("isUresponsivetext", "device.isUresponsivetext", width: 1, height: 1) {
-			state "val", label:"System Health", defaultState: true
-          
+			state "val", label:"System Health", defaultState: true    
 		  }
           
            valueTile("panelremovedtext", "device.panelremovedtext", width: 1, height: 1) {
@@ -203,13 +191,11 @@ command "resetall"
             valueTile("iswateringvalue", "device.iswateringvalue", width: 2, height: 1) {
 			state "val", label: '${currentValue}', defaultState: true
 		  }
-          
-          
+   
             valueTile("isadjustedvalue", "device.isadjustedvalue", width: 2, height: 1) {
 			state "val", label: '${currentValue}', defaultState: true
 		  }
-          
-           
+   
             valueTile("ispausedvalue", "device.ispausedvalue", width: 2, height: 1) {
 			state "val", label: '${currentValue}', defaultState: true
 		  }
@@ -217,8 +203,7 @@ command "resetall"
             valueTile("batterystatusvalue", "device.batterystatusvalue", width: 2, height: 1) {
 			state "val", label: '${currentValue}', defaultState: true
 		  }
-                 
-          
+   
              valueTile("siginalstatusvalue", "device.siginalstatusvalue", width: 2, height: 1) {
 			state "val", label:'${currentValue}', defaultState: true
 		  }
@@ -233,8 +218,7 @@ command "resetall"
          
             valueTile("panelremovedvalue", "device.panelremovedvalue", width: 2, height: 1) {
 			state "val", label: '${currentValue}', defaultState: true
-		  }
-          
+		  } 
          	 valueTile("blank1", "device.blank1", width: 1, height: 1) {
 			state "val", label:"", defaultState: true
 		  }
@@ -257,7 +241,8 @@ command "resetall"
         "adjustpercentincrease","adjustdurationdecrease","adjustdurationtile","adjustdurationincrease","adjust","blank2",
         "unadjust","Text3","pausedurationdecrease","pausedurationtile","pausedurationincrease","pause","blank3","unpause","Text4","iswateringtext","iswateringvalue",
         "isadjustedtext","isadjustedvalue","ispausedtext","ispausedvalue","battreystatustext","batterystatusvalue",
-        "siginalstatustext","siginalstatusvalue","isUresponsivetext","isUresponsivevalue","panelremovedtext","panelremovedvalue","childlocktext","childlockvalue","Text5","normalmode","resetall","demomode"])
+        "siginalstatustext","siginalstatusvalue","isUresponsivetext","isUresponsivevalue","panelremovedtext","panelremovedvalue","childlocktext","childlockvalue",
+        "Text5","normalmode","resetall","demomode"])
 	}
 
 
@@ -268,14 +253,13 @@ preferences {
 }
 }
 
+//Initial setup stuff
 def installed()
-
 {
 initialize()
 }
 
 def initialize()
-
 {
 state.adjust_duration = 0
 state.adjust_percentage = 0
@@ -289,7 +273,7 @@ sendEvent(name: "waterdurationtile", value: state.water_duration_friendly +  "  
 updateStatus()
 }
 
-
+//The "Reset All" button
 def resetall()
 {
 state.adjust_duration = 0
@@ -306,7 +290,7 @@ updateStatus()
 updateStatusNow()
 }
 
-
+//Live updating of status tiles.
 def updateStatus() {
 unschedule()
 runEvery1Minute(batterystatus)
@@ -318,7 +302,8 @@ runEvery1Minute(isadjustedstatus)
 runEvery1Minute(ispausedstatus)
 runEvery1Minute(isUresponsive)
 }
-  
+ 
+//On demand updating of status tiles. 
 def updateStatusNow()
 
 {
@@ -331,6 +316,8 @@ isadjustedstatus()
 ispausedstatus()
 isUresponsive()
 }
+
+//Adjustment Controlls
 
 def adjustdurationincrease() {
  	state.adjust_duration = state.adjust_duration + 1
@@ -347,7 +334,6 @@ def adjustdurationdecrease() {
     sendEvent(name: "adjustdurationtile", value: state.adjust_duration + "  Days")
     updateStatusNow()
 }
-
 
 def adjustpercentincrease() {
 	state.adjust_percentage = state.adjust_percentage + 25
@@ -399,9 +385,9 @@ def waterdurationdecrease() {
     updateStatusNow()
 }
 
-def parse(String description) {
-	log.error "This device does not support incoming events"
 
+def parse(String description) {
+	//log.error "This device does not support incoming events"
 	return null
 }
 
@@ -427,6 +413,7 @@ try {
 }
 updateStatusNow()
 }
+
 
 //Code to pause watering schedule
 def pause() {
@@ -523,7 +510,7 @@ try {
 updateStatusNow()
 }
 
-//Code to stop on-demand watering
+//Code to stop current watering
 def stop() {
 
 def params = [
@@ -640,7 +627,7 @@ try {
         resp.headers.each {
      
     }
-  //log.debug "Siginal response data: ${resp.data.controller.signalStrength}"
+ 
    sendEvent(name: "siginalstatusvalue", value: "$resp.data.controller.signalStrength")
     }
 } catch (e) {
@@ -664,7 +651,7 @@ try {
         resp.headers.each {
        
     }
-  //log.debug "Battrey response data: ${resp.data.controller.batteryStatus}"
+ 
    sendEvent(name: "batterystatusvalue", value: "$resp.data.controller.batteryStatus")
 
     }
@@ -828,6 +815,7 @@ try {
 
 }
 
+
 //Code to get general system status
 def isUresponsive() {
 
@@ -859,4 +847,4 @@ try {
 
 }
 
-//End of Device Handler
+//End of Device Handler.
