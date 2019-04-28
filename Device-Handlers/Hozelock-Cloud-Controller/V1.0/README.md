@@ -26,6 +26,6 @@ SmartThings Groovy ID: https://graph.api.smartthings.com/
 Smartthings Forum Post: 
 
 
-
+&nbsp;&nbsp;
 
 Regards: Elliott.
