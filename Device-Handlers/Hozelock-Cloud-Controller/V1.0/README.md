@@ -23,7 +23,7 @@ SmartThings Groovy ID: https://graph.api.smartthings.com/
 
 
 
-Smartthings Forum Post: 
+Smartthings Forum Post: https://community.smartthings.com/t/release-hozelock-cloud-controller-device-handler/162386
 
 
 &nbsp;&nbsp;
